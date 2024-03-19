@@ -1,2 +1,3 @@
-# Flash-LED
-A beginner project that will allow users to flash an LED at either 1Hz, 10Hz, 50Hz, or 100Hz depending on depending on the switch that are enabled or disabled
+# AND Gaate
+A beginner project that will replicate an AND gate
+Files included are the verilog code itself, a file containing a testbench of the code, a file containing the waveform inputs and output, and a file for the simulation runtime engine.
