@@ -1,2 +1,2 @@
-# Verilog-Projects
-A repository of verilog projects that I will update to program FPGAs and learn verilog
+# SystemVerilog-Projects
+A repository of SystemVerilog projects that I will build to build up my skillset
