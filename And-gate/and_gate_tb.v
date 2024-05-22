@@ -44,6 +44,5 @@ initial begin
     $display("Test complete");
 
 end
-sdsd
 
 endmodule
