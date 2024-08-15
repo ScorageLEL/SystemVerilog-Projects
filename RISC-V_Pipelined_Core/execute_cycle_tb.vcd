@@ -1,0 +1,320 @@
+$date
+	Thu Jul 18 13:46:33 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Execute_Cycle_tb $end
+$var wire 32 ! WriteDataM [31:0] $end
+$var wire 1 " ResultSrcM $end
+$var wire 1 # RegWriteM $end
+$var wire 5 $ RD_M [4:0] $end
+$var wire 32 % PCTargetE [31:0] $end
+$var wire 1 & PCSrcE $end
+$var wire 32 ' PCPlus4M [31:0] $end
+$var wire 1 ( MemWriteM $end
+$var wire 32 ) ALU_ResultM [31:0] $end
+$var reg 3 * ALUControlE [2:0] $end
+$var reg 1 + ALUSrcE $end
+$var reg 1 , BranchE $end
+$var reg 2 - ForwardA_E [1:0] $end
+$var reg 2 . ForwardB_E [1:0] $end
+$var reg 32 / Imm_Ext_E [31:0] $end
+$var reg 1 0 MemWriteE $end
+$var reg 32 1 PCE [31:0] $end
+$var reg 32 2 PCPlus4E [31:0] $end
+$var reg 32 3 RD1_E [31:0] $end
+$var reg 32 4 RD2_E [31:0] $end
+$var reg 5 5 RD_E [4:0] $end
+$var reg 1 6 RegWriteE $end
+$var reg 1 7 ResultSrcE $end
+$var reg 32 8 ResultW [31:0] $end
+$var reg 1 9 clk $end
+$var reg 1 : rst $end
+$scope module dut $end
+$var wire 3 ; ALUControlE [2:0] $end
+$var wire 1 + ALUSrcE $end
+$var wire 1 , BranchE $end
+$var wire 2 < ForwardA_E [1:0] $end
+$var wire 2 = ForwardB_E [1:0] $end
+$var wire 32 > Imm_Ext_E [31:0] $end
+$var wire 1 0 MemWriteE $end
+$var wire 1 ( MemWriteM $end
+$var wire 32 ? PCE [31:0] $end
+$var wire 32 @ PCPlus4E [31:0] $end
+$var wire 32 A PCPlus4M [31:0] $end
+$var wire 1 & PCSrcE $end
+$var wire 32 B RD1_E [31:0] $end
+$var wire 32 C RD2_E [31:0] $end
+$var wire 5 D RD_E [4:0] $end
+$var wire 5 E RD_M [4:0] $end
+$var wire 1 6 RegWriteE $end
+$var wire 1 # RegWriteM $end
+$var wire 1 7 ResultSrcE $end
+$var wire 1 " ResultSrcM $end
+$var wire 32 F ResultW [31:0] $end
+$var wire 32 G WriteDataM [31:0] $end
+$var wire 1 9 clk $end
+$var wire 1 : rst $end
+$var wire 1 H ZeroE $end
+$var wire 32 I Src_B_interim [31:0] $end
+$var wire 1 J Src_B $end
+$var wire 32 K Src_A [31:0] $end
+$var wire 32 L ResultE [31:0] $end
+$var wire 32 M PCTargetE [31:0] $end
+$var wire 32 N ALU_ResultM [31:0] $end
+$var reg 1 O MemWriteE_r $end
+$var reg 32 P PCPlus4E_r [31:0] $end
+$var reg 32 Q RD2_E_r [31:0] $end
+$var reg 5 R RD_E_r [4:0] $end
+$var reg 1 S RegWriteE_r $end
+$var reg 32 T ResultE_r [31:0] $end
+$var reg 1 U ResultSrcE_r $end
+$scope module alu $end
+$var wire 3 V ALUControl [2:0] $end
+$var wire 32 W B [31:0] $end
+$var wire 1 X Carry $end
+$var wire 1 Y OverFlow $end
+$var wire 1 H Zero $end
+$var wire 32 Z Sum [31:0] $end
+$var wire 32 [ Result [31:0] $end
+$var wire 1 \ Negative $end
+$var wire 1 ] Cout $end
+$var wire 32 ^ A [31:0] $end
+$upscope $end
+$scope module alu_src_mux $end
+$var wire 32 _ b [31:0] $end
+$var wire 1 + s $end
+$var wire 32 ` c [31:0] $end
+$var wire 32 a a [31:0] $end
+$upscope $end
+$scope module branch_adder $end
+$var wire 32 b a [31:0] $end
+$var wire 32 c b [31:0] $end
+$var wire 32 d c [31:0] $end
+$upscope $end
+$scope module srca_mux $end
+$var wire 32 e a [31:0] $end
+$var wire 32 f b [31:0] $end
+$var wire 32 g c [31:0] $end
+$var wire 2 h s [1:0] $end
+$var wire 32 i d [31:0] $end
+$upscope $end
+$scope module srcb_mux $end
+$var wire 32 j a [31:0] $end
+$var wire 32 k b [31:0] $end
+$var wire 32 l c [31:0] $end
+$var wire 2 m s [1:0] $end
+$var wire 32 n d [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b0 f
+b0 e
+b0 d
+b0 c
+b0 b
+b0 a
+b0 `
+b0 _
+b0 ^
+0]
+0\
+b0 [
+b0 Z
+0Y
+0X
+b0 W
+b0 V
+0U
+b0 T
+0S
+b0 R
+b0 Q
+b0 P
+0O
+b0 N
+b0 M
+b0 L
+b0 K
+0J
+b0 I
+1H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+0:
+09
+b0 8
+07
+06
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+00
+b0 /
+b0 .
+b0 -
+0,
+0+
+b0 *
+b0 )
+0(
+b0 '
+0&
+b0 %
+b0 $
+0#
+0"
+b0 !
+$end
+#5000
+19
+#10000
+09
+1:
+#15000
+19
+#20000
+0H
+b1000 L
+b1000 [
+b1000 Z
+b1000 K
+b1000 ^
+b1000 i
+b10000 `
+b11 I
+b11 a
+b11 n
+09
+b1 -
+b1 <
+b1 h
+b1000 8
+b1000 F
+b1000 f
+b1000 k
+b100100 2
+b100100 @
+b100000 1
+b100000 ?
+b100000 b
+b1 5
+b1 D
+b110000 %
+b110000 M
+b110000 d
+b10000 /
+b10000 >
+b10000 _
+b10000 c
+b11 4
+b11 C
+b11 j
+b101 3
+b101 B
+b101 e
+1+
+16
+0:
+#25000
+19
+#30000
+1H
+b0 L
+b0 [
+b0 Z
+b0 K
+b0 ^
+b0 i
+09
+b10 -
+b10 <
+b10 h
+b110100 2
+b110100 @
+b1000000 %
+b1000000 M
+b1000000 d
+b110000 1
+b110000 ?
+b110000 b
+b10 5
+b10 D
+b1 *
+b1 ;
+b1 V
+#35000
+19
+#40000
+09
+#45000
+19
+#50000
+09
+#55000
+19
+#60000
+09
+#65000
+19
+#70000
+09
+#75000
+19
+#80000
+09
+#85000
+19
+#90000
+09
+#95000
+19
+#100000
+09
+#105000
+19
+#110000
+09
+#115000
+19
+#120000
+09
+#125000
+19
+#130000
+09
+#135000
+19
+#140000
+09
